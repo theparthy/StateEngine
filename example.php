@@ -1,0 +1,1 @@
+<?phprequire_once ('vendor/autoload.php');use TheParthy\Example\SampleEntityAwareStateEngine;use TheParthy\Example\SampleEntity;use TheParthy\Example\States;use TheParthy\StateMachine\StateEngine;$dealAwareSE = new SampleEntityAwareStateEngine(new StateEngine);$dealAwareSE->setEntity(new SampleEntity(States::INITIAL))->setState(States::START);
